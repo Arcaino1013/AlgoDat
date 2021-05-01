@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AlgoDatProject
 {
-    interface ISetUnsorted
+    interface ISetUnsorted : IDictionary
     {
     }
 }

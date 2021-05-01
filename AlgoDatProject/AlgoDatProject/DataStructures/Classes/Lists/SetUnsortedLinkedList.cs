@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AlgoDatProject
+namespace AlgoDatProject.DataStructures.Classes
 {
-    interface ISetSorted : IDictionary
+    class SetUnsortedLinkedList
     {
     }
 }

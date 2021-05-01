@@ -9,6 +9,7 @@ namespace AlgoDatProject
     interface IDictionary
     {
         bool Search(int key);
+        void Insert(params int[] key);
         void Insert(int key);
         void Delete(int key);
         void Print();

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AlgoDatProject
+namespace AlgoDatProject.DataStructures.Classes.Tree.Node
 {
-    interface ISetSorted : IDictionary
+    class AVLTreeNode : BinTreeNode
     {
     }
 }

@@ -9,16 +9,18 @@ namespace AlgoDatProject.DataStructures.Classes.Tree
 {
     public class BinSearchTree : ISetSorted
     {
-        BinTreeNode rootNode;
+        BinTreeNode rootNode, toDeleteParent;
 
         public BinSearchTree(int key)
         {
             rootNode = new BinTreeNode(key);
+            toDeleteParent = null;
         }
 
         public BinSearchTree(params int[] key)
         {
             rootNode = new BinTreeNode(key[0]);
+            toDeleteParent = null;
             for (int i = 1; i < key.Length; i++)
             {
                 Insert(key[i]);
@@ -28,7 +30,7 @@ namespace AlgoDatProject.DataStructures.Classes.Tree
         #region
         public void Delete(int key)
         {
-            throw new NotImplementedException();
+            if(rootNode.Search(key, out toDeleteParent) == true) { toDeleteParent.Delete(key); }
         }
 
         public void Insert(params int[] key)
@@ -51,7 +53,7 @@ namespace AlgoDatProject.DataStructures.Classes.Tree
 
         public bool Search(int key)
         {
-            throw new NotImplementedException();
+            return rootNode.Search(key, out toDeleteParent);
         }
         #endregion
     }

@@ -43,7 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataStructures\Classes\Array.cs" />
+    <Compile Include="DataStructures\Classes\Array\Array.cs" />
+    <Compile Include="DataStructures\Classes\Lists\LinkedList.cs" />
+    <Compile Include="DataStructures\Classes\Lists\Node\LinkedListNode.cs" />
+    <Compile Include="DataStructures\Classes\Lists\MultiSetSortedLinkedList.cs" />
+    <Compile Include="DataStructures\Classes\Lists\MultiSetUnsortedLinkedList.cs" />
+    <Compile Include="DataStructures\Classes\Lists\SetSortedLinkedList.cs" />
+    <Compile Include="DataStructures\Classes\Lists\SetUnsortedLinkedList.cs" />
+    <Compile Include="DataStructures\Classes\Tree\AVLTree.cs" />
+    <Compile Include="DataStructures\Classes\Tree\BinSearchTree.cs" />
+    <Compile Include="DataStructures\Classes\Tree\Node\AVLTreeNode.cs" />
+    <Compile Include="DataStructures\Classes\Tree\Node\BinTreeNode.cs" />
+    <Compile Include="DataStructures\Classes\Tree\Node\TreapNode.cs" />
+    <Compile Include="DataStructures\Classes\Tree\Treap.cs" />
     <Compile Include="DataStructures\Interface\IMultiSetUnsorted.cs" />
     <Compile Include="DataStructures\Interface\IMultiSetSorted.cs" />
     <Compile Include="DataStructures\Interface\IDictionary.cs" />
@@ -55,5 +67,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
